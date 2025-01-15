@@ -1,0 +1,390 @@
+/* inicio */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .header nav ul li {
+        padding: 0 20px;
+    }
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(131, 1, 131);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: rgb(131, 0, 131);
+}
+
+/* fim parte geral */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header a {
+    color: #9c9c9c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px rgb(131, 0, 131);
+    transform: scale(1.1);
+}
+
+/* topo site */
+section .topo-site {
+    padding: 40px 4%;
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.topo-site h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 39px;
+}
+
+.topo-site .txt-toposite h1 span {
+    color: rgb(131, 0, 131);
+}
+
+.topo-site .txt-toposite p {
+    color: #fff;
+    margin: 40px 40px 0px;
+}
+
+.topo-site .img-toposite img {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* PARTE DAS HABILIDADES */
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
+    transition: 0.6s;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px #ffffff78;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 58px;
+    color: rgb(131, 0, 131);
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 27px;
+    margin: 15px 0;
+}
+
+/* FIM DAS HABILIDADES */
+
+/* sobre */
+section.sobre {
+    padding: 70px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+    flex: 1;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: rgb(131, 0, 131);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+}
+
+/* Redes sociais */
+.sobre .btn-socialmidias {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sobre .btn-socialmidias a {
+    text-decoration: none;
+}
+
+.sobre .btn-socialmidias li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.sobre .btn-socialmidias li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.sobre .btn-socialmidias li .icon {
+    font-size: 28px;
+    color: #fff;
+}
+
+.sobre .btn-socialmidias li .text {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.sobre .btn-socialmidias li:hover {
+    opacity: 0.9;
+    background: linear-gradient(90deg, var(--cor1), var(--cor2));
+}
+
+/* porjetos*/
+/* Estilos para a seção de Projetos */
+section.projetos {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff28;
+}
+
+section.projetos .flex {
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 20px; /* Pequeno espaçamento entre os projetos */
+}
+
+.img-proj {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-position 2s ease-in-out;
+}
+
+.img-proj:hover {
+    background-position: center bottom;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurece o fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.img-proj:hover .overlay {
+    opacity: 1;
+}
+
+
+/* estilo rodapé */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn-socialf button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(137, 2, 137);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer .line-footer p i{
+    color: #fafafa;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+    header > .interface {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .topo-site .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .topo-site .img-toposite img {
+        width: 80%;
+        height: auto;
+    }
+
+    .especialidades .flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .especialidades .especialidades-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sobre .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre .btn-socialmidias a {
+        width: 100%;
+    }
+
+    .sobre .btn-socialmidias li {
+        width: 100%;
+    }
+
+    section.projetos .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-proj {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
