@@ -55,7 +55,7 @@ header nav ul li a:hover {
 }
 
 .btn-contato button {
-    padding: 8px 13px;
+    padding: 7px 11px;
     font-size: 16px;
     background: linear-gradient(90deg, #a445ed, #6a00f4);
     color: #fff;
@@ -67,7 +67,7 @@ header nav ul li a:hover {
 
 .btn-contato button:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 6px rgba(164, 69, 237, 0.7);
+    box-shadow: 0px 0px 4px rgba(164, 69, 237, 0.7);
 }
 
 /* Topo do Site */
