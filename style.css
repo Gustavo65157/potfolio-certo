@@ -1,4 +1,4 @@
-/* Estilos Gerais */
+/* Reset e base */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ body {
     gap: 20px;
 }
 
-/* Header */
+/* Cabeçalho */
 header {
     background-color: #131313;
     padding: 20px 0;
@@ -70,7 +70,7 @@ header nav ul li a:hover {
     box-shadow: 0px 0px 4px rgba(164, 69, 237, 0.7);
 }
 
-/* Topo do Site */
+/* Topo do site */
 .topo-site {
     text-align: center;
     padding: 50px 0;
@@ -78,35 +78,33 @@ header nav ul li a:hover {
 
 .topo-site h1 {
     font-size: 40px;
-    color: #fff;
+    margin-bottom: 10px;
 }
 
 .topo-site p {
     font-size: 18px;
-    margin-top: 10px;
     color: #ccc;
+    max-width: 700px;
+    margin: auto;
 }
 
 .img-toposite img {
     max-width: 300px;
     border-radius: 10px;
     animation: flutuar 3s ease-in-out infinite alternate;
+    margin-top: 20px;
 }
 
 @keyframes flutuar {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(15px);
-    }
+    0% { transform: translateY(0); }
+    100% { transform: translateY(15px); }
 }
 
-/* Seção de Habilidades */
+/* Habilidades */
 .especialidades {
-    padding: 50px 0;
     background-color: #1a1a1a;
     text-align: center;
+    padding: 50px 0;
 }
 
 .especialidades h2 {
@@ -123,7 +121,6 @@ header nav ul li a:hover {
     border-radius: 10px;
     padding: 20px;
     width: 300px;
-    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -134,7 +131,6 @@ header nav ul li a:hover {
 }
 
 .especialidades-box h3 {
-    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -147,11 +143,11 @@ header nav ul li a:hover {
     box-shadow: 0 0 10px rgba(164, 69, 237, 0.5);
 }
 
-/* Seção de Projetos */
+/* Projetos */
 .projetos {
-    padding: 50px 0;
-    text-align: center;
     background-color: #121212;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .projetos h2 {
@@ -180,10 +176,8 @@ header nav ul li a:hover {
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     display: flex;
@@ -191,17 +185,17 @@ header nav ul li a:hover {
     justify-content: center;
     font-size: 18px;
     opacity: 0;
-    transition: opacity 0.3s;
     border-radius: 10px;
+    transition: opacity 0.3s;
 }
 
 .img-proj:hover .overlay {
     opacity: 1;
 }
 
-/* Footer */
+/* Rodapé e botões animados */
 footer {
-    padding: 20px 0;
+    padding: 30px 10px;
     background-color: #131313;
     text-align: center;
 }
@@ -211,28 +205,68 @@ footer p {
     margin-bottom: 20px;
 }
 
-.btn-socialf {
+/* Botões animados */
+.btn-socialf-animado {
+    list-style: none;
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
-.btn-socialf button {
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(90deg, #a445ed, #6a00f4);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    font-size: 20px;
+.btn-socialf-animado li {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.34);
+    border-radius: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    transition: 0.3s;
 }
 
-.btn-socialf button:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(164, 69, 237, 0.7);
+.btn-socialf-animado li:hover {
+    width: 180px;
+}
+
+.btn-socialf-animado li span {
+    position: absolute;
+}
+
+.btn-socialf-animado .icon {
+    color: #ccc;
+    font-size: 2.1em;
+    transition: 0.2s;
+}
+
+.btn-socialf-animado .text {
+    color: white;
+    font-size: 18px;
+    transform: scale(0);
+    transition: 0.2s;
+    transition-delay: 0.1s;
+}
+
+.btn-socialf-animado li:hover .text {
+    transform: scale(1);
+}
+
+.btn-socialf-animado li:hover .icon {
+    transform: scale(0);
+}
+
+.btn-socialf-animado li::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+    z-index: 0;
+}
+
+.btn-socialf-animado li:hover::before {
+    opacity: 1;
 }

@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfólio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Início do Cabeçalho -->
+    <!-- Cabeçalho -->
     <header>
         <div class="interface">
-            <!-- <a href="#">Logo</a> -->
             <nav>
                 <ul>
-                    <li><a href="#topo-site">inicio</a></li>
+                    <li><a href="#topo-site">Início</a></li>
                     <li><a href="#especialidades">Habilidades</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                 </ul>
@@ -27,24 +25,22 @@
             </div>
         </div>
     </header>
-    <!-- Fim do Cabeçalho -->
 
-    <!-- Início do Topo do Site -->
+    <!-- Topo do site -->
     <section id="topo-site" class="topo-site">
         <div class="flex">
+            <div class="img-toposite">
+                <img src="img/IMG-20250716-WA0018.jpg" alt="Minha Foto">
+            </div>
             <div class="txt-toposite">
                 <h1>Quem sou eu</h1>
                 <p>Meu nome é Gustavo Scarton, tenho 17 anos e estou no terceiro ano do ensino médio. Atualmente, também estou cursando Voucher Dev no Senac, onde estou desenvolvendo habilidades na área de tecnologia e programação. Meu foco é me preparar para o mercado de trabalho com uma base sólida em desenvolvimento e inovação.</p>
             </div>
-            <div class="img-toposite">
-                <img src="img/" alt="">
-            </div>
         </div>
     </section>
-    <!-- Fim do Topo do Site -->
 
-    <!-- Início da Seção de Habilidades -->
-    <section id="especialidades" target="" class="especialidades">
+    <!-- Habilidades -->
+    <section id="especialidades" class="especialidades">
         <h2 class="titulo">Minhas <span>Habilidades</span></h2>
         <div class="flex">
             <div class="especialidades-box">
@@ -59,40 +55,52 @@
             </div>
             <div class="especialidades-box">
                 <i class="bi bi-tools"></i>
-                <h3>Backend </h3>
-                <p>phyton .</p>
+                <h3>Backend</h3>
+                <p>Python.</p>
             </div>
         </div>
     </section>
-    <!-- Fim da Seção de Habilidades -->
 
-    <!-- Início da Seção de Projetos -->
+    <!-- Projetos -->
     <section id="projetos" class="projetos">
         <h2 class="titulo">Meus <span>Projetos</span></h2>
-        <a  href="https://github.com/Gustavo65157/LadingPage-Lanchonete-"  class="flex">
+        <a href="https://github.com/Gustavo65157/LadingPage-Lanchonete-" class="flex" target="_blank">
             <div class="img-proj" style="background-image: url('img/screencapture-127-0-0-1-5501-Pages-home-html-2024-12-10-16_56_19.png');">
                 <div class="overlay">Projeto 1</div>
             </div>
-            </div>
         </a>
     </section>
-    <!-- Fim da Seção de Projetos -->
-
-    <!-- Início do Rodapé -->
+    
+    <!-- Rodapé -->
     <footer id="footer">
-        <div class="flex">
-            <div class="line-footer">
-                <p>&copy; 2025 Gustavo Santos | Todos os direitos reservados.</p>
-            </div>
-            <div class="btn-socialf">
-                <a href="http://wa.me/5567996069700" target=""><button><i class="bi bi-whatsapp"></i></button></a>
-                <a href="https://github.com/Gustavo65157" target=""><button><i class="bi bi-github"></i></button></a>
-                <a href="https://www.instagram.com/gusta.fst" target=""><button><i class="bi bi-instagram"></i></button></a>
-                <a href="https://www.linkedin.com/in/gustavo-santos-098a1b346/" target=""><button><i class="bi bi-linkedin"></i></button></a>
-            </div>
-        </div>
+        <p>&copy; 2025 Gustavo Santos | Todos os direitos reservados.</p>
+        <ul class="btn-socialf-animado">
+            <a href="https://github.com/Gustavo65157" target="_blank">
+                <li style="--cor1: #9d00ff; --cor2: #5d006d;">
+                    <span class="icon"><i class="bi bi-github"></i></span>
+                    <span class="text">Gustavo65157</span>
+                </li>
+            </a>
+            <a href="https://www.instagram.com/gusta.fst" target="_blank">
+                <li style="--cor1: #fb3997; --cor2: #fecf12;">
+                    <span class="icon"><i class="bi bi-instagram"></i></span>
+                    <span class="text">@gusta.fst</span>
+                </li>
+            </a>
+            <a href="https://www.linkedin.com/in/gustavo-santos-098a1b346/" target="_blank">
+                <li style="--cor1: #0000ff; --cor2: #1e0079;">
+                    <span class="icon"><i class="bi bi-linkedin"></i></span>
+                    <span class="text">LinkedIn</span>
+                </li>
+            </a>
+            <a href="http://wa.me/5567996069700" target="_blank">
+                <li style="--cor1: #25d366; --cor2: #128c7e;">
+                    <span class="icon"><i class="bi bi-whatsapp"></i></span>
+                    <span class="text">WhatsApp</span>
+                </li>
+            </a>
+        </ul>
     </footer>
-    <!-- Fim do Rodapé -->
 
 </body>
 </html>
